@@ -3,7 +3,6 @@ import assets, { messagesDummyData } from "../assets/assets";
 import { formatMessageTime } from "../lib/utils";
 import { ChatContext } from "../../context/ChatContext";
 import { AuthContext } from "../../context/AuthContext";
-import { set } from "mongoose";
 import toast from "react-hot-toast";
 
 const ChatContainer = () => {
