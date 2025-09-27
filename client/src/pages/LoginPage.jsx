@@ -34,7 +34,11 @@ const LoginPage = () => {
     max-sm:flex-col backdrop-blur-2xl"
     >
       {/* -------- left -------- */}
-      <img src={assets.logo_big} alt="" className="w-[min(30vw,250px)]" />
+      <div className="flex flex-col items-center gap-6">
+        <img src={assets.buddy} alt="" className="w-[min(30vw,250px)]" />
+      <h1 className="text-4xl font-bold text-white">Welcome to ChatBuddy</h1>
+      </div>
+      
 
       {/* -------- right -------- */}
 
@@ -59,7 +63,7 @@ const LoginPage = () => {
             value={fullName}
             type="text"
             className="p-2 border border-gray-500 rounded-md focus:outline-none
-            focus:ring-2 focus:ring-indigo-500"
+            focus:ring-2 focus:ring-blue-500"
             placeholder="Full Name"
             required
           />
@@ -74,7 +78,7 @@ const LoginPage = () => {
               placeholder="Email Address"
               required
               className="p-2 border border-gray-500 rounded-md focus:outline-none
-            focus:ring-2 focus:ring-indigo-500"
+            focus:ring-2 focus:ring-blue-500"
             />
 
             <input
@@ -84,7 +88,7 @@ const LoginPage = () => {
               placeholder="Password"
               required
               className="p-2 border border-gray-500 rounded-md focus:outline-none
-            focus:ring-2 focus:ring-indigo-500"
+            focus:ring-2 focus:ring-blue-500"
             />
           </>
         )}
@@ -103,7 +107,7 @@ const LoginPage = () => {
 
         <button
           type="submit"
-          className="py-3 bg-gradient-to-r from-purple-400 to-violet-600 text-white rounded-md cursor-pointer"
+          className="py-3 bg-gradient-to-r from-blue-400 to-red-600 text-white rounded-md cursor-pointer"
         >
           {currState === "Sign up" ? "Create Account" : "Login"}
         </button>
@@ -122,7 +126,7 @@ const LoginPage = () => {
                   setCurrState("Login");
                   setIsDataSubmitted(false);
                 }}
-                className="font-medium text-violet-500 cursor-pointer"
+                className="font-medium text-blue-500 cursor-pointer"
               >
                 Login here
               </span>
@@ -132,7 +136,7 @@ const LoginPage = () => {
               Create an account{" "}
               <span
                 onClick={() => setCurrState("Sign up")}
-                className="font-medium text-violet-500 cursor-pointer"
+                className="font-medium text-blue-500 cursor-pointer"
               >
                 Click here
               </span>

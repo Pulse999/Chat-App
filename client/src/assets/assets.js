@@ -1,6 +1,8 @@
 import avatar_icon from './avatar_icon.png'
 import gallery_icon from './gallery_icon.svg'
 import help_icon from './help_icon.png'
+import buddy from './buddy.png'
+import buddy_svg from './buddy_1.svg'
 import logo_icon from './logo_icon.svg'
 import logo_big from './logo_big.svg'
 import logo from './logo.png'
@@ -21,6 +23,7 @@ import pic3 from './pic3.png'
 import pic4 from './pic4.png'
 import img1 from './img1.jpg'
 import img2 from './img2.jpg'
+import wallpaper from './wallpaper_back.jpg'
 
 const assets = {
     avatar_icon,
@@ -35,6 +38,10 @@ const assets = {
     arrow_icon,
     code,
     bgImage,
+    buddy,
+    buddy_svg,
+    wallpaper,
+    profile_richard,
     profile_martin
 }
 

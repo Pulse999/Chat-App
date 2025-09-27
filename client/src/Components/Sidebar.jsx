@@ -41,7 +41,8 @@ const Sidebar = () => {
     >
       <div className="pb-5">
         <div className="flex justify-between items-center">
-          <img src={assets.logo} alt="logo" className="max-w-40" />
+          <img src={assets.buddy} alt="logo" className="max-w-12" />
+          <h3 className="text-lg font-semibold">ChatBuddy</h3>
           <div className="relative py-2 group">
             <img
               src={assets.menu_icon}
