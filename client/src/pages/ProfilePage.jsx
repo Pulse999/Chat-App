@@ -37,7 +37,7 @@ const ProfilePage = () => {
           <h3 className='text-lg'>Profile details</h3>
           <label htmlFor="avatar" className='flex items-center gap-3 cursor-pointer'>
             <input onChange={(e)=>setSelectedImg(e.target.files[0])} type="file" id='avatar' accept='.png, .jpg, .jpeg' hidden/>
-            <img src={selectedImg ? URL.createObjectURL(selectedImg) : assets.avatar_icon} alt=""
+            <img src={selectedImg ? URL.createObjectURL(selectedImg) : assets.buddy} alt=""
              className={`w-12 h-12 ${selectedImg && 'rounded-full'}`}/>
              upload profile image
           </label>
@@ -47,7 +47,7 @@ const ProfilePage = () => {
           <textarea onChange={(e)=>setBio(e.target.value)} value={bio} placeholder='Write profile bio' required className='p-2 border border-gray-500 
           rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500' rows={4}></textarea>
           
-          <button type="submit" className='bg-gradient-to-r from-purple-400 to-violet-600 
+          <button type="submit" className='bg-gradient-to-r from-blue-400 to-red-600 
           rounded-full text-lg cursor-pointer'>Save</button>
         </form>
         <img className={`max-w-44 aspect-square rounded-full mx-10 max-sm:mt-10 ${selectedImg && 'rounded-full'}`} 
